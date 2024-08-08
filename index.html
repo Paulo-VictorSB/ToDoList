@@ -9,17 +9,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animações -->
+    <link rel="stylesheet" href="assets/css/animacoes.css">
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <style>
+        .guardar {
+            border: 1px solid rgba(0, 0, 0, 0.466);
+            border-radius: 0px 0px 5px 5px;
+            position: relative;
+            left: 80%;
+            font-size: 1.3rem;
+            color: white;
+            background-color: black;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            padding-bottom: 50px;
+        }
+
+        .hide {
+            display: none;
+        }
+
     </style>
 </head>
 
 <body>
 
     <header>
-        <nav class="nav bg-black">
+        <nav class="nav bg-black py-2">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col text-center">
@@ -30,31 +51,33 @@
         </nav>
     </header>
 
-    <main class="shadow border pb-5">
+    <main class="shadow border pb-5" id="adicao-de-tarefa">
         <div class="container text-center">
             <div class="row mb-3 mt-3">
                 <div class="col">
                     <h4>Gerenciar Tarefas</h4>
                 </div>
             </div>
-            <div class="row ps-3">
+            <div class="row">
                 <div class="row text-start">
                     <label for="titulo-lista">
-                        <p>Título da Tarefa</p>
+                        <p id="texto-titulo">Título da Tarefa *</p>
                     </label>
-                    <input type="text" id="titulo-lista" class="form-control mb-1 ms-2">
+                    <input type="text" id="titulo-lista" class="form-control mb-1 ms-2" required
+                        placeholder="Estudar para a prova..">
                 </div>
 
                 <div class="row text-start">
                     <label for="descricao-lista">
-                        <p>Descrição</p>
+                        <p id="descricao-tarefa">Descrição *</p>
                     </label>
-                    <textarea id="descricao-lista" class="form-control ms-2"></textarea>
+                    <textarea id="descricao-lista" class="form-control ms-2" required
+                        placeholder="1hr para matemática.."></textarea>
                 </div>
-                <div class="row mt-3">
-                    <div class="col">
-                        <select id="categoria-lista" class="form-select bg-dark text-light">
-                            <option selected>Categoria</option>
+                <div class="row mt-3 ps-4">
+                    <div class="col-12 col-lg-6 mt-1">
+                        <select id="categoria-lista" class="form-select bg-dark text-light" required>
+                            <option selected>Categoria *</option>
                             <option value="trabalho">Trabalho</option>
                             <option value="estudos">Estudos</option>
                             <option value="casa">Casa</option>
@@ -67,9 +90,9 @@
                             <option value="eventos">Eventos</option>
                         </select>
                     </div>
-                    <div class="col">
-                        <select id="prior-lista" class="form-select bg-dark text-light">
-                            <option selected>Nível de Prioridade</option>
+                    <div class="col-12 col-lg-6 mt-1">
+                        <select id="prior-lista" class="form-select bg-dark text-light" required>
+                            <option selected>Nível de Prioridade *</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -77,21 +100,63 @@
                             <option value="5">5</option>
                         </select>
                     </div>
-                    <div class="col-4 text-end">
-                        <button class="btn btn-dark px-5">Incluir Tarefa</button>
+                    <div class="col-12 mt-3">
+                        <button class="btn btn-dark px-5" id="incluir">Incluir Tarefa</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <button class="guardar" id="botao-interatividade"><i class="fa-solid fa-arrow-circle-up" id="iconeBtn"></i></button>
 
-    <aside>
-        <div class="container">
-            <div class="row">
-                
+    <section>
+        <div class="container mt-3" id="section">
+            <div class="row text-center">
+                <h3>Lista de tarefas</h3>
+            </div>
+            <div class="row justify-content-center mt-2">
+                <div class="col-lg-3">
+                    <label style="display: flex; gap: 5px;">
+                        <input type="text" id="" placeholder="Buscar.." class="form-control">
+                        <button class="btn bg-dark text-light"><i class="fa-solid fa-search"></i></button>
+                    </label>
+                </div>
+                <div class="col-lg-1 mt-sm-2 text-center mt-2 mt-lg-0">
+                    <button class="btn bg-dark text-light">Filtrar</button>
+                </div>
+                <!-- <div class="col-2">
+                    <select id="filtrar-categoria" class="form-select bg-dark text-light">
+                        <option selected>Categoria</option>
+                        <option value="trabalho">Trabalho</option>
+                        <option value="estudos">Estudos</option>
+                        <option value="casa">Casa</option>
+                        <option value="pessoal">Pessoal</option>
+                        <option value="saude">Saúde e Fitness</option>
+                        <option value="lazer">Lazer e Entretenimento</option>
+                        <option value="compras">Compras</option>
+                        <option value="projetos">Projetos</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="eventos">Eventos</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <select id="prior-lista" class="form-select bg-dark text-light" required>
+                        <option selected>Nível de Prioridade</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-1">
+                    <button class="btn bg-dark text-light">OK</button>
+                </div> -->
             </div>
         </div>
-    </aside>
+    </section>
+
+
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -101,6 +166,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <script src="assets/js/esconder-mostrar.js"></script>
+    <script src="assets/js/gerenciar-tarefa.js"></script>
+    <script src="assets/js/busca-filtros.js"></script>
 </body>
 
 </html>

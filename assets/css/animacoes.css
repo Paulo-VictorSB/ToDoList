@@ -1,0 +1,37 @@
+.hide {
+    display: none;
+}
+
+@keyframes naopreencheuTextoSelect {
+    0% {
+        color: red;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+.naopreencheuTextoSelect {
+    animation: naopreencheuTextoSelect 3s;
+}
+
+@keyframes naopreencheuInput {
+    0% {
+        box-shadow: 0 0.1rem 1rem rgba(255, 0, 0, 0.747);
+    }
+}
+
+.naopreencheuInput {
+    animation: naopreencheuInput 3s;
+}
+
+@keyframes naopreencheuTexto {
+    0% {
+        color: red;
+    }
+}
+
+.naopreencheuTexto {
+    animation: naopreencheuTexto 3s;
+}
