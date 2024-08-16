@@ -71,7 +71,7 @@
                         <p id="texto-titulo">Título da Tarefa *</p>
                     </label>
                     <input type="text" id="titulo-lista" class="form-control mb-1 ms-2" required
-                        placeholder="Estudar para a prova.." value="Paulo Victor">
+                        placeholder="Estudar para a prova..">
                 </div>
 
                 <div class="row text-start">
@@ -79,13 +79,13 @@
                         <p id="descricao-tarefa">Descrição *</p>
                     </label>
                     <textarea id="descricao-lista" class="form-control ms-2" required
-                        placeholder="1hr para matemática..">Texto para exemplo</textarea>
+                        placeholder="1hr para matemática.."></textarea>
                 </div>
                 <div class="row mt-3 ps-4" id="botoes-funcionalidades">
                     <div class="col-12 col-lg-6 mt-1">
                         <select id="categoria-lista" class="form-select bg-dark text-light" required>
-                            <option>Categoria *</option>
-                            <option value="trabalho" selected>Trabalho</option>
+                            <option selected>Categoria *</option>
+                            <option value="trabalho">Trabalho</option>
                             <option value="estudos">Estudos</option>
                             <option value="casa">Casa</option>
                             <option value="pessoal">Pessoal</option>
@@ -99,8 +99,8 @@
                     </div>
                     <div class="col-12 col-lg-6 mt-1">
                         <select id="prior-lista" class="form-select bg-dark text-light" required>
-                            <option>Nível de Prioridade *</option>
-                            <option value="1" selected>1</option>
+                            <option selected>Nível de Prioridade *</option>
+                            <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -130,14 +130,14 @@
             <div class="row justify-content-center mt-2">
                 <div class="col-lg-3">
                     <label style="display: flex; gap: 5px;">
-                        <input type="text" id="" placeholder="Buscar.." class="form-control">
-                        <button class="btn bg-dark text-light"><i class="fa-solid fa-search"></i></button>
+                        <input type="text" id="buscar" placeholder="Buscar.." class="form-control">
+                        <button class="btn bg-dark text-light" id="confirmarBusca"><i class="fa-solid fa-search"></i></button>
                     </label>
                 </div>
-                <div class="col-lg-1 mt-sm-2 text-center mt-2 mt-lg-0">
-                    <button class="btn bg-dark text-light">Filtrar</button>
+                <div class="col-lg-1 mt-sm-2 text-start mt-2 mt-lg-0">
+                    <button class="btn bg-dark text-light" id="filtrar">Filtrar</button>
                 </div>
-                <!-- <div class="col-2">
+                <div class="col-12 mt-2 col-lg-2 mt-lg-0 cf">
                     <select id="filtrar-categoria" class="form-select bg-dark text-light">
                         <option selected>Categoria</option>
                         <option value="trabalho">Trabalho</option>
@@ -152,8 +152,8 @@
                         <option value="eventos">Eventos</option>
                     </select>
                 </div>
-                <div class="col-2">
-                    <select id="prior-lista" class="form-select bg-dark text-light" required>
+                <div class="col-12 mt-2 col-lg-2 mt-lg-0 cf">
+                    <select id="filtrar-prioridade" class="form-select bg-dark text-light" required>
                         <option selected>Nível de Prioridade</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -162,9 +162,9 @@
                         <option value="5">5</option>
                     </select>
                 </div>
-                <div class="col-1">
-                    <button class="btn bg-dark text-light">OK</button>
-                </div> -->
+                <div class="col-12 col-lg-1 cf mt-2 mt-lg-0 text-start">
+                    <button class="btn bg-dark text-light" id="resetarFiltragem">Resetar</button>
+                </div>
             </div>
         </div>
     </section>
@@ -181,8 +181,6 @@
         crossorigin="anonymous"></script>
 
     <script src="assets/js/esconder-mostrar.js"></script>
-    <script src="assets/js/gerenciar-tarefa.js"></script>
-    <script src="assets/js/busca-filtros.js"></script>
 </body>
 
 </html>

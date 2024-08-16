@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function alternarBotoes() {
         const todasTarefas = document.querySelectorAll('.tarefa');
+        editarBtn.classList.toggle('hide')
         
         todasTarefas.forEach(tarefa => {
             const editarTextoBtn = tarefa.querySelector('.editarTexto');
@@ -268,6 +269,34 @@ document.addEventListener('DOMContentLoaded', () => {
         removerValores();
     }
     
+   cancelar.addEventListener('click', cancelarEdicao)
+
+   function cancelarEdicao() {
+        const todasTarefas = document.querySelectorAll('.tarefa');
+        todasTarefas.forEach(tarefa => {
+            const rows = tarefa.querySelectorAll('.row'); // Seleciona todas as .row dentro de cada .tarefa
+        
+            if (rows.length > 1) { // Verifica se existem pelo menos duas .row
+                const segundaRow = rows[1]; // Seleciona a segunda .row
+                const colBtns = segundaRow.querySelector('.colBtns'); // Procura por .colBtns dentro da segunda .row
+        
+                if (colBtns) {
+                    colBtns.classList.toggle('hide'); // Altera a classe de .colBtns para hide
+                    confirmar.classList.toggle('hide');
+                    cancelar.classList.toggle('hide');
+                    editarBtn.classList.toggle('hide');
+                    incluir.classList.toggle('hide');
+                    document.querySelector('.completar').classList.toggle('hide')
+                    document.querySelector('.apagar').classList.toggle('hide')
+                    document.querySelector('.editarTexto').classList.toggle('hide')
+                }
+            }
+        });
+    
+        upDown();
+        removerValores();    
+    }
+
 
     function criarTarefa(titulo, categoria, prioridade, descricao) {
         let rowPai = document.createElement('div');
@@ -337,6 +366,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
+        rowPai.setAttribute('data-titulo', titulo)
+        rowPai.setAttribute('data-categoria', categoria);
+        rowPai.setAttribute('data-prioridade', prioridade);
         rowPai.append(row);
         row.append(col12);
         col12.append(title);
@@ -359,5 +391,83 @@ document.addEventListener('DOMContentLoaded', () => {
         // }
         
         console.log('tarefa adicionada a section');
+    }
+
+    const buscar = document.querySelector('#buscar')
+    const confirmarBusca = document.querySelector('#confirmarBusca')
+
+    confirmarBusca.addEventListener('click', () => {
+        const termoBusca = buscar.value.trim().toLowerCase();
+        const todasTarefas = document.querySelectorAll('.tarefa');
+
+        todasTarefas.forEach(tarefa => {
+            const tituloDaTarefa = tarefa.querySelector('.titulo-tarefa').textContent.toLowerCase();
+            
+            if (tituloDaTarefa.includes(termoBusca) || termoBusca === '') {
+                tarefa.classList.remove('hide');
+            } else {
+                tarefa.classList.add('hide');
+            }
+        });
+    });
+
+    const filtrar = document.querySelector('#filtrar')
+    const cf = document.querySelectorAll('.cf')
+    cf.forEach(e =>{
+        e.classList.toggle('hide')
+    })    
+
+
+    filtrar.addEventListener('click', ()=>{
+        cf.forEach(e =>{
+            e.classList.toggle('hide')
+        }) 
+    })
+
+    const filtrarCategoria = document.querySelector('#filtrar-categoria')
+    const filtrarPrioridade = document.querySelector('#filtrar-prioridade')
+    const resetarFiltragem = document.querySelector('#resetarFiltragem')
+
+    filtrarCategoria.addEventListener('change', filtrarTarefas);
+    filtrarPrioridade.addEventListener('change', filtrarTarefas);
+    resetarFiltragem.addEventListener('click', resetarFiltros);
+
+    function filtrarTarefas() {
+        const categoriaSelecionada = filtrarCategoria.value;
+        const prioridadeSelecionada = filtrarPrioridade.value;
+
+        const todasTarefas = document.querySelectorAll('.tarefa'); // Seleciona as tarefas no momento da filtragem
+
+        todasTarefas.forEach(tarefa => {
+            const categoriaTarefa = tarefa.getAttribute('data-categoria');
+            const prioridadeTarefa = tarefa.getAttribute('data-prioridade');
+            
+            let mostrar = true;
+
+            if (categoriaSelecionada !== "Categoria" && categoriaTarefa !== categoriaSelecionada) {
+                mostrar = false;
+            }
+
+            if (prioridadeSelecionada !== "Nível de Prioridade" && prioridadeTarefa !== prioridadeSelecionada) {
+                mostrar = false;
+            }
+
+            if (mostrar) {
+                tarefa.classList.remove('hide');
+            } else {
+                tarefa.classList.add('hide');
+            }
+        });
+    }
+
+    function resetarFiltros() {
+        filtrarCategoria.value = "Categoria";
+        filtrarPrioridade.value = "Nível de Prioridade";
+
+        const todasTarefas = document.querySelectorAll('.tarefa'); // Seleciona as tarefas no momento do reset
+
+        todasTarefas.forEach(tarefa => {
+            tarefa.classList.remove('hide');
+        });
     }
 });
