@@ -28,17 +28,24 @@
 
         body {
             padding-bottom: 50px;
+            overflow-x: hidden;
         }
 
         .hide {
             display: none;
         }
 
+        .sucesso {
+            background-color: rgb(220, 255, 220);
+            color: rgb(41, 48, 41);
+            text-decoration: line-through;
+        }
+
     </style>
 </head>
 
 <body>
-
+    <!-- Cabeçalho -->
     <header>
         <nav class="nav bg-black py-2">
             <div class="container">
@@ -50,7 +57,7 @@
             </div>
         </nav>
     </header>
-
+    <!-- Gerenciamento de tarefas -->
     <main class="shadow border pb-5" id="adicao-de-tarefa">
         <div class="container text-center">
             <div class="row mb-3 mt-3">
@@ -64,7 +71,7 @@
                         <p id="texto-titulo">Título da Tarefa *</p>
                     </label>
                     <input type="text" id="titulo-lista" class="form-control mb-1 ms-2" required
-                        placeholder="Estudar para a prova..">
+                        placeholder="Estudar para a prova.." value="Paulo Victor">
                 </div>
 
                 <div class="row text-start">
@@ -72,13 +79,13 @@
                         <p id="descricao-tarefa">Descrição *</p>
                     </label>
                     <textarea id="descricao-lista" class="form-control ms-2" required
-                        placeholder="1hr para matemática.."></textarea>
+                        placeholder="1hr para matemática..">Texto para exemplo</textarea>
                 </div>
-                <div class="row mt-3 ps-4">
+                <div class="row mt-3 ps-4" id="botoes-funcionalidades">
                     <div class="col-12 col-lg-6 mt-1">
                         <select id="categoria-lista" class="form-select bg-dark text-light" required>
-                            <option selected>Categoria *</option>
-                            <option value="trabalho">Trabalho</option>
+                            <option>Categoria *</option>
+                            <option value="trabalho" selected>Trabalho</option>
                             <option value="estudos">Estudos</option>
                             <option value="casa">Casa</option>
                             <option value="pessoal">Pessoal</option>
@@ -92,24 +99,30 @@
                     </div>
                     <div class="col-12 col-lg-6 mt-1">
                         <select id="prior-lista" class="form-select bg-dark text-light" required>
-                            <option selected>Nível de Prioridade *</option>
-                            <option value="1">1</option>
+                            <option>Nível de Prioridade *</option>
+                            <option value="1" selected>1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
                     </div>
-                    <div class="col-12 mt-3">
+                    <div class="col-12 col-lg-6 mt-3 text-lg-start text-md-start col-md-6">
                         <button class="btn btn-dark px-5" id="incluir">Incluir Tarefa</button>
+                        <button class="btn btn-dark px-5 hide" id="confirmar">Confirmar</button>
+                    </div>
+                    <div class="col-12 col-lg-6 mt-3 text-lg-end text-md-end col-md-6">
+                        <button class="btn btn-dark px-5 hide" id="editar">Editar Tarefa</button>
+                        <button class="btn btn-dark px-5 hide" id="cancelar">Cancelar</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <!-- Botão de interação -->
     <button class="guardar" id="botao-interatividade"><i class="fa-solid fa-arrow-circle-up" id="iconeBtn"></i></button>
-
-    <section>
+    <!-- Container de tarefas -->
+    <section class="container">
         <div class="container mt-3" id="section">
             <div class="row text-center">
                 <h3>Lista de tarefas</h3>
@@ -155,7 +168,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Tarefas -->
 
 
     <!-- Bootstrap JavaScript Libraries -->

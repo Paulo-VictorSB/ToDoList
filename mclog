@@ -1,0 +1,838 @@
+[22:46:10] [main/INFO]: ModLauncher running: args [--username, Paulo Victor, --version, ForgeOptiFine 1.16.5, --gameDir, C:\Users\paulo\AppData\Roaming\.minecraft, --assetsDir, C:\Users\paulo\AppData\Roaming\.minecraft\assets, --assetIndex, 1.16, --uuid, f552a0c36f9644b6940bea25c8810883, --accessToken, ????????, --userType, mojang, --versionType, modified, --width, 925, --height, 530, --launchTarget, fmlclient, --fml.forgeVersion, 36.2.42, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20210115.111550]
+[22:46:10] [main/INFO]: ModLauncher 8.1.3+8.1.3+main-8.1.x.c94d18ec starting: java version 1.8.0_51 by Oracle Corporation
+[22:46:10] [main/WARN]: LEGACY JDK DETECTED, SECURED JAR HANDLING DISABLED
+[22:46:10] [main/INFO]: OptiFineTransformationService.onLoad
+[22:46:10] [main/INFO]: OptiFine ZIP file: C:\Users\paulo\AppData\Roaming\.minecraft\mods\OptiFine-OptiFine-1.16.5_HD_U_G8_pre2.jar
+[22:46:10] [main/INFO]: Target.PRE_CLASS is available
+[22:46:11] [main/INFO]: Added Lets Encrypt root certificates as additional trust
+[22:46:11] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/C:/Users/paulo/AppData/Roaming/.minecraft/libraries/org/spongepowered/mixin/0.8.4/mixin-0.8.4.jar Service=ModLauncher Env=CLIENT
+[22:46:11] [main/INFO]: OptiFineTransformationService.initialize
+[22:46:13] [main/INFO]: OptiFineTransformationService.transformers
+[22:46:13] [main/INFO]: Targets: 308
+[22:46:14] [main/INFO]: additionalClassesLocator: [optifine., net.optifine.]
+[22:46:14] [main/INFO]: Successfully loaded Mixin Connector [hellfirepvp.astralsorcery.MixinConnector]
+[22:46:14] [main/INFO]: Successfully loaded Mixin Connector [vazkii.botania.common.MixinConnector]
+[22:46:14] [main/INFO]: Successfully loaded Mixin Connector [vazkii.patchouli.common.MixinConnector]
+[22:46:14] [main/INFO]: Launching target 'fmlclient' with arguments [--version, ForgeOptiFine 1.16.5, --gameDir, C:\Users\paulo\AppData\Roaming\.minecraft, --assetsDir, C:\Users\paulo\AppData\Roaming\.minecraft\assets, --uuid, f552a0c36f9644b6940bea25c8810883, --username, Paulo Victor, --assetIndex, 1.16, --accessToken, ????????, --userType, mojang, --versionType, modified, --width, 925, --height, 530]
+[22:46:14] [main/ERROR]: Error occurred applying transform of coremod META-INF/asm/multipart.js function render
+java.lang.NullPointerException: null
+	at org.objectweb.asm.tree.InsnList.insert(InsnList.java:343) ~[asm-tree-9.6.jar:9.6]
+	at jdk.nashorn.internal.scripts.Script$Recompilation$33$5956A$\^eval\_.initializeCoreMod$transformer-3(<eval>:135) ~[?:?]
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:638) ~[nashorn.jar:?]
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:229) ~[nashorn.jar:?]
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:387) ~[nashorn.jar:?]
+	at jdk.nashorn.api.scripting.ScriptObjectMirror.call(ScriptObjectMirror.java:110) ~[nashorn.jar:?]
+	at net.minecraftforge.coremod.NashornFactory.lambda$getFunction$0(NashornFactory.java:18) ~[coremods-4.0.6.jar:4.0.6+14+master.c21a551]
+	at net.minecraftforge.coremod.NashornFactory$$Lambda$435/2134195609.apply(Unknown Source) ~[?:?]
+	at net.minecraftforge.coremod.transformer.CoreModMethodTransformer.runCoremod(CoreModMethodTransformer.java:18) ~[coremods-4.0.6.jar:?]
+	at net.minecraftforge.coremod.transformer.CoreModMethodTransformer.runCoremod(CoreModMethodTransformer.java:10) ~[coremods-4.0.6.jar:?]
+	at net.minecraftforge.coremod.transformer.CoreModBaseTransformer.transform(CoreModBaseTransformer.java:38) [coremods-4.0.6.jar:?]
+	at cpw.mods.modlauncher.TransformerHolder.transform(TransformerHolder.java:41) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.ClassTransformer.performVote(ClassTransformer.java:179) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:111) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:265) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.buildTransformedClassNodeFor(TransformingClassLoader.java:142) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.LaunchPluginHandler.lambda$null$8(LaunchPluginHandler.java:97) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.LaunchPluginHandler$$Lambda$460/1276894402.buildTransformedClassNodeFor(Unknown Source) [modlauncher-8.1.3.jar:?]
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.getClassNode(MixinLaunchPluginLegacy.java:222) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.getClassNode(MixinLaunchPluginLegacy.java:207) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.ClassInfo.forName(ClassInfo.java:2005) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.getTargetClass(MixinInfo.java:1017) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.readTargetClasses(MixinInfo.java:1007) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.parseTargets(MixinInfo.java:895) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.MixinConfig.prepareMixins(MixinConfig.java:867) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.MixinConfig.prepare(MixinConfig.java:779) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.prepareConfigs(MixinProcessor.java:539) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.select(MixinProcessor.java:462) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.checkSelect(MixinProcessor.java:438) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:290) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) [mixin-0.8.4.jar:0.8.4+Jenkins-b308.git-2accda5000f7602229606b39437565542cc6fba4]
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:154) [modlauncher-8.1.3.jar:8.1.3+8.1.3+main-8.1.x.c94d18ec]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:85) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:265) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:136) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:98) [modlauncher-8.1.3.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [?:1.8.0_51]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_51]
+	at java.lang.Class.forName(Class.java:348) [?:1.8.0_51]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:37) [forge-1.16.5-36.2.42.jar:36.2]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$495/1203638171.call(Unknown Source) [forge-1.16.5-36.2.42.jar:36.2]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?]
+[22:46:15] [main/INFO]: Adding 'reach_set_client_renderer' ASM patch...
+[22:46:15] [main/INFO]: Added 'reach_set_client_renderer' ASM patch!
+[22:46:15] [main/INFO]: Adding 'on_block_change' ASM patch...
+[22:46:15] [main/INFO]: Added 'on_block_change' ASM patch!
+[22:46:15] [main/INFO]: Adding 'reach_set_server_entity_interact' ASM patch...
+[22:46:15] [main/INFO]: Added 'reach_set_server_entity_interact' ASM patch!
+[22:46:15] [main/INFO]: Adding 'on_block_change' ASM patch...
+[22:46:15] [main/INFO]: Added 'on_block_change' ASM patch!
+[22:46:17] [main/INFO]: Adding 'on_block_change' ASM patch...
+[22:46:17] [main/INFO]: Added 'on_block_change' ASM patch!
+[22:46:17] [main/ERROR]: Error occurred applying transform of coremod META-INF/asm/multipart.js function render
+java.lang.NullPointerException: null
+	at org.objectweb.asm.tree.InsnList.insert(InsnList.java:343) ~[asm-tree-9.6.jar:9.6]
+	at jdk.nashorn.internal.scripts.Script$Recompilation$33$5956A$\^eval\_.initializeCoreMod$transformer-3(<eval>:135) ~[?:?]
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:638) ~[nashorn.jar:?]
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:229) ~[nashorn.jar:?]
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:387) ~[nashorn.jar:?]
+	at jdk.nashorn.api.scripting.ScriptObjectMirror.call(ScriptObjectMirror.java:110) ~[nashorn.jar:?]
+	at net.minecraftforge.coremod.NashornFactory.lambda$getFunction$0(NashornFactory.java:18) ~[coremods-4.0.6.jar:4.0.6+14+master.c21a551]
+	at net.minecraftforge.coremod.NashornFactory$$Lambda$435/2134195609.apply(Unknown Source) ~[?:?]
+	at net.minecraftforge.coremod.transformer.CoreModMethodTransformer.runCoremod(CoreModMethodTransformer.java:18) ~[coremods-4.0.6.jar:?]
+	at net.minecraftforge.coremod.transformer.CoreModMethodTransformer.runCoremod(CoreModMethodTransformer.java:10) ~[coremods-4.0.6.jar:?]
+	at net.minecraftforge.coremod.transformer.CoreModBaseTransformer.transform(CoreModBaseTransformer.java:38) [coremods-4.0.6.jar:?]
+	at cpw.mods.modlauncher.TransformerHolder.transform(TransformerHolder.java:41) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.ClassTransformer.performVote(ClassTransformer.java:179) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:111) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:265) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:136) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:98) [modlauncher-8.1.3.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [?:1.8.0_51]
+	at net.optifine.reflect.Reflector.<clinit>(Reflector.java:290) [?:?]
+	at net.minecraft.crash.CrashReport.func_71504_g(CrashReport.java:101) [?:?]
+	at net.minecraft.crash.CrashReport.<init>(CrashReport.java:54) [?:?]
+	at net.minecraft.crash.CrashReport.func_230188_h_(CrashReport.java:425) [?:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:37) [forge-1.16.5-36.2.42.jar:36.2]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$495/1203638171.call(Unknown Source) [forge-1.16.5-36.2.42.jar:36.2]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?]
+[22:46:18] [main/INFO]: Adding 'reach_set_client_renderer' ASM patch...
+[22:46:18] [main/INFO]: Added 'reach_set_client_renderer' ASM patch!
+[22:46:26] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[22:46:26] [main/INFO]: Setting user: Paulo Victor
+[22:46:26] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraft.launchwrapper.Launch
+[22:46:26] [main/INFO]: Backend library: LWJGL version 3.2.2 build 10
+[22:46:26] [main/INFO]: [OptiFine] 
+[22:46:26] [main/INFO]: [OptiFine] OptiFine_1.16.5_HD_U_G8_pre2
+[22:46:26] [main/INFO]: [OptiFine] Build: 20210305-002749
+[22:46:26] [main/INFO]: [OptiFine] OS: Windows 10 (amd64) version 10.0
+[22:46:26] [main/INFO]: [OptiFine] Java: 1.8.0_51, Oracle Corporation
+[22:46:26] [main/INFO]: [OptiFine] VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+[22:46:26] [main/INFO]: [OptiFine] LWJGL: 3.3.0 Win32 WGL EGL OSMesa VisualC DLL
+[22:46:26] [main/INFO]: [OptiFine] OpenGL: Radeon RX 570 Series, version 4.6.0 Compatibility Profile Context 24.3.1.240216, ATI Technologies Inc.
+[22:46:26] [main/INFO]: [OptiFine] OpenGL Version: 4.6.0
+[22:46:26] [main/INFO]: [OptiFine] OpenGL Fancy fog: Not available (GL_NV_fog_distance)
+[22:46:26] [main/INFO]: [OptiFine] Maximum texture size: 16384x16384
+[22:46:26] [VersionCheck/INFO]: [OptiFine] Checking for new version
+[22:46:26] [main/INFO]: [Shaders] OpenGL Version: 4.6.0 Compatibility Profile Context 24.3.1.240216
+[22:46:26] [main/INFO]: [Shaders] Vendor:  ATI Technologies Inc.
+[22:46:26] [main/INFO]: [Shaders] Renderer: Radeon RX 570 Series
+[22:46:26] [main/INFO]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
+[22:46:26] [main/INFO]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
+[22:46:26] [main/INFO]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
+[22:46:26] [main/INFO]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[22:46:26] [main/INFO]: [Shaders] Load shaders configuration.
+[22:46:26] [main/INFO]: [Shaders] Loaded shaderpack: B-v3.2.4.zip
+[22:46:26] [main/INFO]: [OptiFine] [Shaders] Worlds: -1, 1
+[22:46:26] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.Loader
+[22:46:26] [main/INFO]: [OptiFine] Using legacy block aliases: flattening_ids.txt
+[22:46:27] [main/INFO]: [OptiFine] Legacy block aliases: 2751
+[22:46:27] [main/INFO]: [OptiFine] (Reflector) Field not present: net.minecraftforge.client.model.pipeline.LightUtil.itemConsumer
+[22:46:27] [main/INFO]: [OptiFine] (Reflector) Field not present: net.minecraftforge.client.model.pipeline.LightUtil.tessellator
+[22:46:27] [VersionCheck/INFO]: [OptiFine] Version found: G7
+[22:46:28] [main/INFO]: Scanning classes for titanium
+[22:46:28] [main/INFO]: Found FeaturePluginInstance for class IndustrialForegoingResourcePlugin for plugin resources
+[22:46:28] [main/INFO]: Found FeaturePluginInstance for class DefaultResourceRegistryPlugin for plugin resources
+[22:46:30] [modloading-worker-2/INFO]: Forge mod loading, version 36.2.42, for MC 1.16.5 with MCP 20210115.111550
+[22:46:30] [modloading-worker-2/INFO]: MinecraftForge v36.2.42 Initialized
+[22:46:30] [modloading-worker-3/INFO]: Skipped compatibility for mod immersiveengineering.
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:t_corridor
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@e90a9c8
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:four_way_corridor_loot
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@685c8e88
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:four_way_corridor
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@30f4a252
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:standard/ore_hold_1
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@3b4837e2
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:standard/mine_entrance
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@107b62d7
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:straight_corridor
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@22fe51c0
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:spiral_staircase
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@71c5091b
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:t3_entrance
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@6e951861
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:standard_entrance
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@6874f446
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:mini_dungeon/library
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@259e8315
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:mini_dungeon/armoury
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@fce2668
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:mini_dungeon/farm
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@668fa9f9
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:mini_dungeon/portal_nether
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@e60563f
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:217]: Loading schematic: bloodmagic:mini_dungeon/crypt
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:219]: Resulting dungeon: wayoftime.bloodmagic.structures.DungeonRoom@766c90ca
+[22:46:31] [modloading-worker-1/INFO]: [wayoftime.bloodmagic.structures.DungeonRoomLoader:loadDungeons:223]: # schematics: 14
+[22:46:31] [modloading-worker-0/INFO]: Scanning classes for industrialforegoing
+[22:46:31] [modloading-worker-0/INFO]: Found FeaturePluginInstance for class AstralSorceryPlugin for plugin astralsorcery
+[22:46:31] [modloading-worker-0/INFO]: Found FeaturePluginInstance for class CuriosPlugin for plugin curios
+[22:46:31] [modloading-worker-0/INFO]: Constructed class AstralSorceryPlugin for plugin astralsorcery for mod industrialforegoing
+[22:46:31] [modloading-worker-0/INFO]: Constructed class CuriosPlugin for plugin curios for mod industrialforegoing
+[22:46:31] [modloading-worker-0/INFO]: Executing phase CONSTRUCTION for plugin class AstralSorceryPlugin
+[22:46:31] [modloading-worker-0/INFO]: Executing phase CONSTRUCTION for plugin class CuriosPlugin
+[22:46:31] [modloading-worker-0/INFO]: Executing phase PRE_INIT for plugin class AstralSorceryPlugin
+[22:46:31] [modloading-worker-0/INFO]: Executing phase PRE_INIT for plugin class CuriosPlugin
+[22:46:31] [modloading-worker-1/INFO]: Registered plugin: com.blakebr0.mysticalagriculture.lib.ModCorePlugin
+[22:46:31] [modloading-worker-1/INFO]: Scanning classes for titanium
+[22:46:31] [modloading-worker-1/INFO]: Constructed class IndustrialForegoingResourcePlugin for plugin resources for mod titanium
+[22:46:31] [modloading-worker-1/INFO]: Constructed class DefaultResourceRegistryPlugin for plugin resources for mod titanium
+[22:46:31] [modloading-worker-1/INFO]: Executing phase CONSTRUCTION for plugin class IndustrialForegoingResourcePlugin
+[22:46:31] [modloading-worker-3/INFO]: Found 1 RS API injection point
+[22:46:31] [modloading-worker-3/INFO]: Injected RS API in com.refinedmods.refinedstorageaddons.RSAddons RSAPI
+[22:46:31] [modloading-worker-1/INFO]: Executing phase CONSTRUCTION for plugin class DefaultResourceRegistryPlugin
+[22:46:32] [modloading-worker-2/INFO]: Optifine detected.
+[22:46:32] [modloading-worker-3/INFO]: Detected new forge version, registering events reflectively.
+[22:46:33] [modloading-worker-3/INFO]: Adding 'reach_set_server_entity_interact' ASM patch...
+[22:46:33] [modloading-worker-3/INFO]: Added 'reach_set_server_entity_interact' ASM patch!
+[22:46:33] [modloading-worker-3/INFO]: Detected new forge version, registering events reflectively.
+[22:46:34] [modloading-worker-3/INFO]: Knock Knock...
+[22:46:34] [modloading-worker-3/WARN]: Reactor detonation initiated.
+[22:46:34] [modloading-worker-3/INFO]: Wait... NO! What?
+[22:46:34] [modloading-worker-3/INFO]: Stop That! That's not how this works!
+[22:46:34] [modloading-worker-3/WARN]: Calculating explosion ETA
+[22:46:34] [modloading-worker-3/INFO]: Ahh... NO... NONONO! DONT DO THAT!!! STOP THIS NOW!
+[22:46:34] [modloading-worker-3/WARN]: **Explosion Imminent!!!**
+[22:46:34] [modloading-worker-3/INFO]: Well...... fork...
+[22:46:34] [modloading-worker-0/INFO]: Executing phase INIT for plugin class AstralSorceryPlugin
+[22:46:34] [modloading-worker-0/INFO]: Executing phase INIT for plugin class CuriosPlugin
+[22:46:34] [modloading-worker-0/INFO]: Executing phase POST_INIT for plugin class AstralSorceryPlugin
+[22:46:34] [modloading-worker-0/INFO]: Executing phase POST_INIT for plugin class CuriosPlugin
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1497)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at java.net.URL.openStream(URL.java:1038)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at com.hrznstudio.titanium.util.URLUtil.readUrl(URLUtil.java:20)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at com.hrznstudio.titanium.reward.Reward.getPlayers(Reward.java:43)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at com.hrznstudio.titanium.reward.Reward.<init>(Reward.java:35)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at com.buuz135.industrial.IndustrialForegoing.<init>(IndustrialForegoing.java:118)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at java.lang.Class.newInstance(Class.java:442)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:67)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at net.minecraftforge.fml.javafmlmod.FMLModContainer$$Lambda$3086/97517255.run(Unknown Source)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:106)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at net.minecraftforge.fml.ModContainer$$Lambda$3545/971497536.run(Unknown Source)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1618)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1610)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689)
+[22:46:34] [modloading-worker-0/INFO]: [com.hrznstudio.titanium.reward.Reward:getPlayers:46]: 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:634]: Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:634]: 	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:634]: 	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:634]: 	at sun.security.validator.Validator.validate(Validator.java:260)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:634]: 	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:634]: 	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:634]: 	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:634]: 	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1479)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:634]: 	... 32 more
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:643]: Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:643]: 	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:145)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:643]: 	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:131)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:643]: 	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:643]: 	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+[22:46:34] [modloading-worker-0/INFO]: [java.lang.Throwable:printStackTrace:643]: 	... 38 more
+[22:46:42] [main/INFO]: HELLO from Register Block
+[22:46:44] [main/INFO]: Loaded book jsons on Thread[Render thread,10,main] in 217 ms
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.AnointmentRegistrar:parseDefinition:126]: Attempting to load Anointment: modjar://bloodmagic/data/bloodmagic/anointment/melee_damage.json, path: /data/bloodmagic/anointment/melee_damage.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.AnointmentRegistrar:parseDefinition:126]: Attempting to load Anointment: modjar://bloodmagic/data/bloodmagic/anointment/holy_water.json, path: /data/bloodmagic/anointment/holy_water.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.AnointmentRegistrar:parseDefinition:126]: Attempting to load Anointment: modjar://bloodmagic/data/bloodmagic/anointment/hidden_knowledge.json, path: /data/bloodmagic/anointment/hidden_knowledge.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.AnointmentRegistrar:parseDefinition:126]: Attempting to load Anointment: modjar://bloodmagic/data/bloodmagic/anointment/quick_draw.json, path: /data/bloodmagic/anointment/quick_draw.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.AnointmentRegistrar:parseDefinition:126]: Attempting to load Anointment: modjar://bloodmagic/data/bloodmagic/anointment/bow_power.json, path: /data/bloodmagic/anointment/bow_power.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.AnointmentRegistrar:parseDefinition:126]: Attempting to load Anointment: modjar://bloodmagic/data/bloodmagic/anointment/bow_velocity.json, path: /data/bloodmagic/anointment/bow_velocity.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/arrow_protect.json, path: /data/bloodmagic/living_armor/arrow_protect.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/fall_protect.json, path: /data/bloodmagic/living_armor/fall_protect.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/physical_protect.json, path: /data/bloodmagic/living_armor/physical_protect.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/jump.json, path: /data/bloodmagic/living_armor/jump.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/health.json, path: /data/bloodmagic/living_armor/health.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/experienced.json, path: /data/bloodmagic/living_armor/experienced.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/sprint_attack.json, path: /data/bloodmagic/living_armor/sprint_attack.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/self_sacrifice.json, path: /data/bloodmagic/living_armor/self_sacrifice.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/speed.json, path: /data/bloodmagic/living_armor/speed.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/poison_resist.json, path: /data/bloodmagic/living_armor/poison_resist.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/fire_resist.json, path: /data/bloodmagic/living_armor/fire_resist.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/digging.json, path: /data/bloodmagic/living_armor/digging.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/knockback_resist.json, path: /data/bloodmagic/living_armor/knockback_resist.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/diamond_protect.json, path: /data/bloodmagic/living_armor/diamond_protect.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/elytra.json, path: /data/bloodmagic/living_armor/elytra.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/curios_socket.json, path: /data/bloodmagic/living_armor/curios_socket.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/melee_damage.json, path: /data/bloodmagic/living_armor/melee_damage.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/repair.json, path: /data/bloodmagic/living_armor/repair.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/downgrade/quenched.json, path: /data/bloodmagic/living_armor/downgrade/quenched.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/downgrade/storm_trooper.json, path: /data/bloodmagic/living_armor/downgrade/storm_trooper.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/downgrade/battle_hungry.json, path: /data/bloodmagic/living_armor/downgrade/battle_hungry.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/downgrade/melee_decrease.json, path: /data/bloodmagic/living_armor/downgrade/melee_decrease.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/downgrade/dig_slowdown.json, path: /data/bloodmagic/living_armor/downgrade/dig_slowdown.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/downgrade/slow_heal.json, path: /data/bloodmagic/living_armor/downgrade/slow_heal.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/downgrade/crippled_arm.json, path: /data/bloodmagic/living_armor/downgrade/crippled_arm.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/downgrade/swim_decrease.json, path: /data/bloodmagic/living_armor/downgrade/swim_decrease.json
+[22:46:44] [main/INFO]: [wayoftime.bloodmagic.core.LivingArmorRegistrar:parseDefinition:223]: Attempting to load Living Armour Upgrade: modjar://bloodmagic/data/bloodmagic/living_armor/downgrade/speed_decrease.json, path: /data/bloodmagic/living_armor/downgrade/speed_decrease.json
+[22:46:44] [main/INFO]: Attempting to register Tile Entities
+[22:46:45] [main/INFO]: Potentially Dangerous alternative prefix `minecraft` for name `milk`, expected `forge`. This could be a intended override, but in most cases indicates a broken mod.
+[22:46:45] [main/INFO]: Potentially Dangerous alternative prefix `minecraft` for name `flowing_milk`, expected `forge`. This could be a intended override, but in most cases indicates a broken mod.
+[22:46:46] [main/WARN]: @Inject(@At("INVOKE")) Shift.BY=2 on assets/astralsorcery/astralsorcery.mixins.json:MixinItemPredicate::handler$zcj000$enhanceEnchantmentList exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[22:46:47] [main/WARN]: Removed resource pack resourcefulbees from options because it doesn't seem to exist anymore
+[22:46:48] [main/INFO]: Narrator library for x64 successfully loaded
+[22:46:48] [main/INFO]: Reloading ResourceManager: Default, Mod Resources
+[22:46:48] [main/INFO]: [OptiFine] *** Reloading textures ***
+[22:46:48] [main/INFO]: [OptiFine] Resource packs: Mod Resources
+[22:46:48] [main/INFO]: [OptiFine] *** Reflector Forge ***
+[22:46:48] [main/INFO]: [OptiFine] (Reflector) Class not present: mods.betterfoliage.client.BetterFoliageClient
+[22:46:48] [main/WARN]: [OptiFine] (Reflector) More than one method found: net.minecraftforge.client.ForgeHooksClient.renderMainMenu
+[22:46:48] [main/WARN]: [OptiFine] (Reflector)  - public static void net.minecraftforge.client.ForgeHooksClient.renderMainMenu(net.minecraft.client.gui.screen.MainMenuScreen,com.mojang.blaze3d.matrix.MatrixStack,net.minecraft.client.gui.FontRenderer,int,int)
+[22:46:48] [main/WARN]: [OptiFine] (Reflector)  - public static void net.minecraftforge.client.ForgeHooksClient.renderMainMenu(net.minecraft.client.gui.screen.MainMenuScreen,com.mojang.blaze3d.matrix.MatrixStack,net.minecraft.client.gui.FontRenderer,int,int,int)
+[22:46:48] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.ModContainer
+[22:46:49] [main/INFO]: [OptiFine] *** Reflector Vanilla ***
+[22:46:49] [Worker-Main-5/INFO]: 75 material render infos loaded
+[22:46:49] [Worker-Main-5/INFO]: [OptiFine] Multitexture: false
+[22:46:49] [Worker-Main-6/INFO]: [OptiFine] Multitexture: false
+[22:46:52] [Worker-Main-4/INFO]: [OptiFine] Multitexture: false
+[22:46:52] [Worker-Main-7/INFO]: [OptiFine] Multitexture: false
+[22:46:52] [Worker-Main-8/ERROR]: Exception caught during firing event: team/chisel/ctm/client/texture/ctx/OffsetProviderRegistry
+	Index: 1
+	Listeners:
+		0: NORMAL
+		1: ASM: class team.chisel.client.ClientProxy registerModels(Lnet/minecraftforge/client/event/ModelRegistryEvent;)V
+java.lang.NoClassDefFoundError: team/chisel/ctm/client/texture/ctx/OffsetProviderRegistry
+	at team.chisel.client.ClientProxy.registerModels(ClientProxy.java:28)
+	at net.minecraftforge.eventbus.ASMEventHandler_543_ClientProxy_registerModels_ModelRegistryEvent.invoke(.dynamic)
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85)
+	at net.minecraftforge.eventbus.EventBus$$Lambda$3600/447348297.invoke(Unknown Source)
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302)
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283)
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:106)
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:318)
+	at net.minecraftforge.fml.ModLoader$$Lambda$13196/1365790775.accept(Unknown Source)
+	at java.util.HashMap.forEach(HashMap.java:1280)
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:215)
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:318)
+	at net.minecraftforge.client.model.ModelLoaderRegistry.onModelLoadingStart(ModelLoaderRegistry.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.optifine.reflect.Reflector.callVoid(Reflector.java:729)
+	at net.optifine.reflect.ReflectorMethod.callVoid(ReflectorMethod.java:217)
+	at net.minecraft.client.renderer.model.ModelBakery.processLoading(ModelBakery.java:181)
+	at net.minecraftforge.client.model.ModelLoader.<init>(ModelLoader.java:58)
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:57)
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:20)
+	at net.minecraft.client.resources.ReloadListener.func_215270_b(SourceFile:11)
+	at net.minecraft.client.resources.ReloadListener$$Lambda$13773/711307874.get(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1582)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1574)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: java.lang.ClassNotFoundException: team.chisel.ctm.client.texture.ctx.OffsetProviderRegistry
+	at java.lang.ClassLoader.findClass(ClassLoader.java:530)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:106)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 31 more
+	Suppressed: java.lang.ClassNotFoundException
+		at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:282)
+		at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:136)
+		at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:98)
+		... 32 more
+
+[22:46:52] [Worker-Main-8/ERROR]: Caught exception during event net.minecraftforge.client.event.ModelRegistryEvent@664c7b4b dispatch for modid chisel
+java.lang.NoClassDefFoundError: team/chisel/ctm/client/texture/ctx/OffsetProviderRegistry
+	at team.chisel.client.ClientProxy.registerModels(ClientProxy.java:28) ~[?:MC1.16.5-2.0.1-alpha.4]
+	at net.minecraftforge.eventbus.ASMEventHandler_543_ClientProxy_registerModels_ModelRegistryEvent.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?]
+	at net.minecraftforge.eventbus.EventBus$$Lambda$3600/447348297.invoke(Unknown Source) ~[?:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:106) [?:36.2]
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:318) [?:?]
+	at net.minecraftforge.fml.ModLoader$$Lambda$13196/1365790775.accept(Unknown Source) [?:?]
+	at java.util.HashMap.forEach(HashMap.java:1280) [?:1.8.0_51]
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:215) [?:?]
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:318) [?:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.onModelLoadingStart(ModelLoaderRegistry.java:74) [?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.optifine.reflect.Reflector.callVoid(Reflector.java:729) [?:?]
+	at net.optifine.reflect.ReflectorMethod.callVoid(ReflectorMethod.java:217) [?:?]
+	at net.minecraft.client.renderer.model.ModelBakery.processLoading(ModelBakery.java:181) [?:?]
+	at net.minecraftforge.client.model.ModelLoader.<init>(ModelLoader.java:58) [?:?]
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:57) [?:?]
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:20) [?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215270_b(SourceFile:11) [?:?]
+	at net.minecraft.client.resources.ReloadListener$$Lambda$13773/711307874.get(Unknown Source) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1582) [?:1.8.0_51]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1574) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) [?:1.8.0_51]
+Caused by: java.lang.ClassNotFoundException: team.chisel.ctm.client.texture.ctx.OffsetProviderRegistry
+	at java.lang.ClassLoader.findClass(ClassLoader.java:530) ~[?:1.8.0_51]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_51]
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:106) ~[modlauncher-8.1.3.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_51]
+	... 31 more
+	Suppressed: java.lang.ClassNotFoundException
+		at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:282) ~[modlauncher-8.1.3.jar:?]
+		at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:136) ~[modlauncher-8.1.3.jar:?]
+		at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:98) ~[modlauncher-8.1.3.jar:?]
+		at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_51]
+		at team.chisel.client.ClientProxy.registerModels(ClientProxy.java:28) ~[?:MC1.16.5-2.0.1-alpha.4]
+		at net.minecraftforge.eventbus.ASMEventHandler_543_ClientProxy_registerModels_ModelRegistryEvent.invoke(.dynamic) ~[?:?]
+		at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?]
+		at net.minecraftforge.eventbus.EventBus$$Lambda$3600/447348297.invoke(Unknown Source) ~[?:?]
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?]
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?]
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:106) [?:36.2]
+		at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:318) [?:?]
+		at net.minecraftforge.fml.ModLoader$$Lambda$13196/1365790775.accept(Unknown Source) [?:?]
+		at java.util.HashMap.forEach(HashMap.java:1280) [?:1.8.0_51]
+		at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:215) [?:?]
+		at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:318) [?:?]
+		at net.minecraftforge.client.model.ModelLoaderRegistry.onModelLoadingStart(ModelLoaderRegistry.java:74) [?:?]
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+		at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+		at net.optifine.reflect.Reflector.callVoid(Reflector.java:729) [?:?]
+		at net.optifine.reflect.ReflectorMethod.callVoid(ReflectorMethod.java:217) [?:?]
+		at net.minecraft.client.renderer.model.ModelBakery.processLoading(ModelBakery.java:181) [?:?]
+		at net.minecraftforge.client.model.ModelLoader.<init>(ModelLoader.java:58) [?:?]
+		at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:57) [?:?]
+		at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:20) [?:?]
+		at net.minecraft.client.resources.ReloadListener.func_215270_b(SourceFile:11) [?:?]
+		at net.minecraft.client.resources.ReloadListener$$Lambda$13773/711307874.get(Unknown Source) [?:?]
+		at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1582) [?:1.8.0_51]
+		at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1574) [?:1.8.0_51]
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_51]
+		at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_51]
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689) [?:1.8.0_51]
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) [?:1.8.0_51]
+[22:46:52] [Worker-Main-8/INFO]: [OptiFine] Multitexture: false
+[22:46:52] [Worker-Main-9/INFO]: [OptiFine] Multitexture: false
+[22:46:52] [main/FATAL]: Preparing crash report with UUID e8eff66c-3f15-4d6d-9fed-314ba029b752
+[22:46:55] [Worker-Main-5/INFO]: [OptiFine] Scaled non power of 2: jei:gui/icons/recipe_transfer, 7 -> 14
+[22:46:55] [Worker-Main-10/INFO]: [OptiFine] Multitexture: false
+[22:46:57] [main/FATAL]: Reported exception thrown!
+net.minecraft.crash.ReportedException: Rendering overlay
+	at net.minecraft.client.renderer.GameRenderer.func_195458_a(GameRenderer.java:812) ~[?:?]
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:977) ~[?:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:607) [?:?]
+	at net.minecraft.client.main.Main.main(Main.java:184) [?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:37) [forge-1.16.5-36.2.42.jar:36.2]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$495/1203638171.call(Unknown Source) [forge-1.16.5-36.2.42.jar:36.2]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?]
+Caused by: net.minecraftforge.fml.ModLoadingException: Chisel (chisel) encountered an error during the common_setup event phase
+§7java.lang.NoClassDefFoundError: team/chisel/ctm/client/texture/ctx/OffsetProviderRegistry
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:110) ~[?:36.2]
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:318) ~[?:?]
+	at net.minecraftforge.fml.ModLoader$$Lambda$13196/1365790775.accept(Unknown Source) ~[?:?]
+	at java.util.HashMap.forEach(HashMap.java:1280) ~[?:1.8.0_51]
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:215) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:318) ~[?:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.onModelLoadingStart(ModelLoaderRegistry.java:74) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.optifine.reflect.Reflector.callVoid(Reflector.java:729) ~[?:?]	at net.optifine.reflect.ReflectorMethod.callVoid(ReflectorMethod.java:217) ~[?:?]
+	at net.minecraft.client.renderer.model.ModelBakery.processLoading(ModelBakery.java:181) ~[?:?]
+	at net.minecraftforge.client.model.ModelLoader.<init>(ModelLoader.java:58) ~[?:?]
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:57) ~[?:?]
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:20) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215270_b(SourceFile:11) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener$$Lambda$13773/711307874.get(Unknown Source) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1582) ~[?:1.8.0_51]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1574) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_51]
+Caused by: java.lang.NoClassDefFoundError: team/chisel/ctm/client/texture/ctx/OffsetProviderRegistry
+	at team.chisel.client.ClientProxy.registerModels(ClientProxy.java:28) ~[?:MC1.16.5-2.0.1-alpha.4]
+	at net.minecraftforge.eventbus.ASMEventHandler_543_ClientProxy_registerModels_ModelRegistryEvent.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?]
+	at net.minecraftforge.eventbus.EventBus$$Lambda$3600/447348297.invoke(Unknown Source) ~[?:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:106) ~[?:36.2]
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:318) ~[?:?]
+	at net.minecraftforge.fml.ModLoader$$Lambda$13196/1365790775.accept(Unknown Source) ~[?:?]
+	at java.util.HashMap.forEach(HashMap.java:1280) ~[?:1.8.0_51]
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:215) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:318) ~[?:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.onModelLoadingStart(ModelLoaderRegistry.java:74) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.optifine.reflect.Reflector.callVoid(Reflector.java:729) ~[?:?]
+	at net.optifine.reflect.ReflectorMethod.callVoid(ReflectorMethod.java:217) ~[?:?]
+	at net.minecraft.client.renderer.model.ModelBakery.processLoading(ModelBakery.java:181) ~[?:?]
+	at net.minecraftforge.client.model.ModelLoader.<init>(ModelLoader.java:58) ~[?:?]
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:57) ~[?:?]
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:20) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215270_b(SourceFile:11) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener$$Lambda$13773/711307874.get(Unknown Source) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1582) ~[?:1.8.0_51]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1574) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_51]
+Caused by: java.lang.ClassNotFoundException: team.chisel.ctm.client.texture.ctx.OffsetProviderRegistry
+	at java.lang.ClassLoader.findClass(ClassLoader.java:530) ~[?:1.8.0_51]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_51]
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:106) ~[modlauncher-8.1.3.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_51]
+	at team.chisel.client.ClientProxy.registerModels(ClientProxy.java:28) ~[?:MC1.16.5-2.0.1-alpha.4]
+	at net.minecraftforge.eventbus.ASMEventHandler_543_ClientProxy_registerModels_ModelRegistryEvent.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?]
+	at net.minecraftforge.eventbus.EventBus$$Lambda$3600/447348297.invoke(Unknown Source) ~[?:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:106) ~[?:36.2]
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:318) ~[?:?]
+	at net.minecraftforge.fml.ModLoader$$Lambda$13196/1365790775.accept(Unknown Source) ~[?:?]
+	at java.util.HashMap.forEach(HashMap.java:1280) ~[?:1.8.0_51]
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:215) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:318) ~[?:?]
+	at net.minecraftforge.client.model.ModelLoaderRegistry.onModelLoadingStart(ModelLoaderRegistry.java:74) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.optifine.reflect.Reflector.callVoid(Reflector.java:729) ~[?:?]
+	at net.optifine.reflect.ReflectorMethod.callVoid(ReflectorMethod.java:217) ~[?:?]
+	at net.minecraft.client.renderer.model.ModelBakery.processLoading(ModelBakery.java:181) ~[?:?]
+	at net.minecraftforge.client.model.ModelLoader.<init>(ModelLoader.java:58) ~[?:?]
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:57) ~[?:?]
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:20) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.func_215270_b(SourceFile:11) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener$$Lambda$13773/711307874.get(Unknown Source) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1582) ~[?:1.8.0_51]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1574) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689) ~[?:1.8.0_51]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_51]
+	Suppressed: java.lang.ClassNotFoundException
+		at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:282) ~[modlauncher-8.1.3.jar:?]
+		at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:136) ~[modlauncher-8.1.3.jar:?]
+		at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:98) ~[modlauncher-8.1.3.jar:?]
+		at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_51]
+		at team.chisel.client.ClientProxy.registerModels(ClientProxy.java:28) ~[?:MC1.16.5-2.0.1-alpha.4]
+		at net.minecraftforge.eventbus.ASMEventHandler_543_ClientProxy_registerModels_ModelRegistryEvent.invoke(.dynamic) ~[?:?]
+		at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?]
+		at net.minecraftforge.eventbus.EventBus$$Lambda$3600/447348297.invoke(Unknown Source) ~[?:?]
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?]
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?]
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:106) ~[?:36.2]
+		at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:318) ~[?:?]
+		at net.minecraftforge.fml.ModLoader$$Lambda$13196/1365790775.accept(Unknown Source) ~[?:?]
+		at java.util.HashMap.forEach(HashMap.java:1280) ~[?:1.8.0_51]
+		at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:215) ~[?:?]
+		at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:318) ~[?:?]
+		at net.minecraftforge.client.model.ModelLoaderRegistry.onModelLoadingStart(ModelLoaderRegistry.java:74) ~[?:?]
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+		at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+		at net.optifine.reflect.Reflector.callVoid(Reflector.java:729) ~[?:?]
+		at net.optifine.reflect.ReflectorMethod.callVoid(ReflectorMethod.java:217) ~[?:?]
+		at net.minecraft.client.renderer.model.ModelBakery.processLoading(ModelBakery.java:181) ~[?:?]
+		at net.minecraftforge.client.model.ModelLoader.<init>(ModelLoader.java:58) ~[?:?]
+		at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:57) ~[?:?]
+		at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:20) ~[?:?]
+		at net.minecraft.client.resources.ReloadListener.func_215270_b(SourceFile:11) ~[?:?]
+		at net.minecraft.client.resources.ReloadListener$$Lambda$13773/711307874.get(Unknown Source) ~[?:?]
+		at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1582) ~[?:1.8.0_51]
+		at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1574) ~[?:1.8.0_51]
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_51]
+		at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_51]
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689) ~[?:1.8.0_51]
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_51]
+[22:46:57] [main/INFO]: [net.minecraft.util.registry.Bootstrap:func_179870_a:123]: ---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 14/08/24 22:46
+Description: Rendering overlay
+
+net.minecraftforge.fml.ModLoadingException: Chisel (chisel) encountered an error during the common_setup event phase
+§7java.lang.NoClassDefFoundError: team/chisel/ctm/client/texture/ctx/OffsetProviderRegistry
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:110) ~[?:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:318) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader$$Lambda$13196/1365790775.accept(Unknown Source) ~[?:?] {}
+	at java.util.HashMap.forEach(HashMap.java:1280) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:215) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:318) ~[?:?] {re:classloading}
+	at net.minecraftforge.client.model.ModelLoaderRegistry.onModelLoadingStart(ModelLoaderRegistry.java:74) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51] {}
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51] {}
+	at net.optifine.reflect.Reflector.callVoid(Reflector.java:729) ~[?:?] {re:classloading}
+	at net.optifine.reflect.ReflectorMethod.callVoid(ReflectorMethod.java:217) ~[?:?] {re:classloading}
+	at net.minecraft.client.renderer.model.ModelBakery.processLoading(ModelBakery.java:181) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default,pl:mixin:APP:appliedenergistics2.mixins.json:unlitquad.ModelBakeryMixin,pl:mixin:APP:assets/botania/botania.mixins.json:AccessorModelBakery,pl:mixin:A}
+	at net.minecraftforge.client.model.ModelLoader.<init>(ModelLoader.java:58) ~[?:?] {re:classloading}
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:57) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:20) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.ReloadListener.func_215270_b(SourceFile:11) ~[?:?] {re:classloading,re:mixin}
+	at net.minecraft.client.resources.ReloadListener$$Lambda$13773/711307874.get(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1582) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1574) ~[?:1.8.0_51] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_51] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_51] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689) ~[?:1.8.0_51] {re:computing_frames}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_51] {}
+Caused by: java.lang.NoClassDefFoundError: team/chisel/ctm/client/texture/ctx/OffsetProviderRegistry
+	at team.chisel.client.ClientProxy.registerModels(ClientProxy.java:28) ~[?:MC1.16.5-2.0.1-alpha.4] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_543_ClientProxy_registerModels_ModelRegistryEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus$$Lambda$3600/447348297.invoke(Unknown Source) ~[?:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:106) ~[?:36.2] {re:classloading}
+	... 24 more
+Caused by: java.lang.ClassNotFoundException: team.chisel.ctm.client.texture.ctx.OffsetProviderRegistry
+	at java.lang.ClassLoader.findClass(ClassLoader.java:530) ~[?:1.8.0_51] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_51] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:106) ~[modlauncher-8.1.3.jar:?] {re:classloading}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_51] {}
+	at team.chisel.client.ClientProxy.registerModels(ClientProxy.java:28) ~[?:MC1.16.5-2.0.1-alpha.4] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_543_ClientProxy_registerModels_ModelRegistryEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus$$Lambda$3600/447348297.invoke(Unknown Source) ~[?:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:106) ~[?:36.2] {re:classloading}
+	... 24 more
+	Suppressed: java.lang.ClassNotFoundException
+		at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:282) ~[modlauncher-8.1.3.jar:?] {}
+		at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:136) ~[modlauncher-8.1.3.jar:?] {re:classloading}
+		at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:98) ~[modlauncher-8.1.3.jar:?] {re:classloading}
+		at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_51] {}
+		at team.chisel.client.ClientProxy.registerModels(ClientProxy.java:28) ~[?:MC1.16.5-2.0.1-alpha.4] {re:classloading}
+		at net.minecraftforge.eventbus.ASMEventHandler_543_ClientProxy_registerModels_ModelRegistryEvent.invoke(.dynamic) ~[?:?] {}
+		at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+		at net.minecraftforge.eventbus.EventBus$$Lambda$3600/447348297.invoke(Unknown Source) ~[?:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+		at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+		at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:106) ~[?:36.2] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:318) ~[?:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader$$Lambda$13196/1365790775.accept(Unknown Source) ~[?:?] {}
+		at java.util.HashMap.forEach(HashMap.java:1280) ~[?:1.8.0_51] {}
+		at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:215) ~[?:?] {re:classloading}
+		at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:318) ~[?:?] {re:classloading}
+		at net.minecraftforge.client.model.ModelLoaderRegistry.onModelLoadingStart(ModelLoaderRegistry.java:74) ~[?:?] {re:classloading}
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51] {}
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51] {}
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51] {}
+		at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51] {}
+		at net.optifine.reflect.Reflector.callVoid(Reflector.java:729) ~[?:?] {re:classloading}
+		at net.optifine.reflect.ReflectorMethod.callVoid(ReflectorMethod.java:217) ~[?:?] {re:classloading}
+		at net.minecraft.client.renderer.model.ModelBakery.processLoading(ModelBakery.java:181) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default,pl:mixin:APP:appliedenergistics2.mixins.json:unlitquad.ModelBakeryMixin,pl:mixin:APP:assets/botania/botania.mixins.json:AccessorModelBakery,pl:mixin:A}
+		at net.minecraftforge.client.model.ModelLoader.<init>(ModelLoader.java:58) ~[?:?] {re:classloading}
+		at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:57) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+		at net.minecraft.client.renderer.model.ModelManager.func_212854_a_(ModelManager.java:20) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+		at net.minecraft.client.resources.ReloadListener.func_215270_b(SourceFile:11) ~[?:?] {re:classloading,re:mixin}
+		at net.minecraft.client.resources.ReloadListener$$Lambda$13773/711307874.get(Unknown Source) ~[?:?] {}
+		at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1582) ~[?:1.8.0_51] {}
+		at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1574) ~[?:1.8.0_51] {}
+		at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_51] {}
+		at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_51] {}
+		at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689) ~[?:1.8.0_51] {re:computing_frames}
+		at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_51] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:110) ~[?:36.2] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:318) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader$$Lambda$13196/1365790775.accept(Unknown Source) ~[?:?] {}
+	at java.util.HashMap.forEach(HashMap.java:1280) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:215) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:318) ~[?:?] {re:classloading}
+	at net.minecraftforge.client.model.ModelLoaderRegistry.onModelLoadingStart(ModelLoaderRegistry.java:74) ~[?:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51] {}
+-- Overlay render details --
+Details:
+	Overlay name: net.minecraft.client.gui.ResourceLoadProgressGui
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.func_195458_a(GameRenderer.java:807) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:OptiFine:default,xf:fml:astralsorcery:reach_set_client_renderer,re:classloading,pl:accesstransformer:B,xf:OptiFine:default,xf:fml:astralsorcery:reach_set_client_renderer,pl:mixin:APP:flywheel.mixins.json:StoreProjectionMatrixMixin,pl:mixin:APP:assets/astralsorcery/astralsorcery.mixins.json:client.MixinGameRenderer,pl:mixin:A}
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:977) [?:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:flywheel.mixins.json:ShaderCloseMixin,pl:mixin:APP:assets/botania/botania.mixins.json:AccessorMinecraft,pl:mixin:APP:create.mixins.json:WindowResizeMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:607) [?:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:flywheel.mixins.json:ShaderCloseMixin,pl:mixin:APP:assets/botania/botania.mixins.json:AccessorMinecraft,pl:mixin:APP:create.mixins.json:WindowResizeMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) [?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51] {}
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:37) [forge-1.16.5-36.2.42.jar:36.2] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$495/1203638171.call(Unknown Source) [forge-1.16.5-36.2.42.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 8850726128 bytes (8440 MB) / 10267656192 bytes (9792 MB) up to 10502537216 bytes (10016 MB)
+	CPUs: 4
+	JVM Flags: 10 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -XX:+IgnoreUnrecognizedVMOptions -Xmx10007M -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	ModLauncher: 8.1.3+8.1.3+main-8.1.x.c94d18ec
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.42.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.42.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.42.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.42.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/OptiFine-OptiFine-1.16.5_HD_U_G8_pre2.jar OptiFine TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.42.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.42
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		astralsorcery-1.16.5-1.14.1.jar                   |Astral Sorcery                |astralsorcery                 |1.16.4-1.14.1       |COMMON_SET|Manifest: 45:2b:0a:49:6b:65:3b:39:a9:dd:d2:5b:55:7f:82:47:a5:1d:7a:cc:7f:a8:69:73:72:53:6f:57:4d:b2:1a:b7
+		Cucumber-1.16.5-4.1.12.jar                        |Cucumber Library              |cucumber                      |4.1.12              |COMMON_SET|Manifest: NOSIGNATURE
+		TinkersLevellingAddon-1.16.5-1.1.1.jar            |Tinkers' Levelling Addon      |tinkerslevellingaddon         |1.1.1               |COMMON_SET|Manifest: NOSIGNATURE
+		jei-1.16.5-7.7.1.153.jar                          |Just Enough Items             |jei                           |7.7.1.153           |COMMON_SET|Manifest: NOSIGNATURE
+		Mekanism-1.16.5-10.1.2.457.jar                    |Mekanism                      |mekanism                      |10.1.2              |COMMON_SET|Manifest: NOSIGNATURE
+		Waystones_1.16.5-7.6.4.jar                        |Waystones                     |waystones                     |7.6.4               |COMMON_SET|Manifest: NOSIGNATURE
+		journeymap-1.16.5-5.8.5p6.jar                     |Journeymap                    |journeymap                    |5.8.5p6             |COMMON_SET|Manifest: NOSIGNATURE
+		appliedenergistics2-8.4.7.jar                     |Applied Energistics 2         |appliedenergistics2           |8.4.7               |COMMON_SET|Manifest: 95:58:cc:83:9d:a8:fa:4f:e9:f3:54:90:66:61:c8:ae:9c:08:88:11:52:52:df:2d:28:5f:05:d8:28:57:0f:98
+		SimpleStorageNetwork-1.16.5-1.5.3.jar             |Simple Storage Network        |storagenetwork                |1.16.5-1.5.3        |COMMON_SET|Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		sophisticatedbackpacks-1.16.5-3.15.20.755.jar     |Sophisticated Backpacks       |sophisticatedbackpacks        |1.16.5-3.15.20.755  |COMMON_SET|Manifest: NOSIGNATURE
+		MekanismGenerators-1.16.5-10.1.2.457.jar          |Mekanism: Generators          |mekanismgenerators            |10.1.2              |COMMON_SET|Manifest: NOSIGNATURE
+		JustEnoughResources-1.16.5-0.12.1.128.jar         |Just Enough Resources         |jeresources                   |0.12.1.128          |COMMON_SET|Manifest: NOSIGNATURE
+		TinkersDelight-1.16-1.8.jar                       |Tinker's Delight              |tdelight                      |1.16-1.8            |COMMON_SET|Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.42-universal.jar                |Forge                         |forge                         |36.2.42             |COMMON_SET|Manifest: 22:af:21:d8:19:82:7f:93:94:fe:2b:ac:b7:e4:41:57:68:39:87:b1:a7:5c:c6:44:f9:25:74:21:14:f5:0d:90
+		BloodMagic-1.16.4-3.1.13-39.jar                   |Blood Magic                   |bloodmagic                    |1.16.4-3.1.13-39    |COMMON_SET|Manifest: NOSIGNATURE
+		twilightforest-1.16.5-4.0.870-universal.jar       |The Twilight Forest           |twilightforest                |NONE                |COMMON_SET|Manifest: NOSIGNATURE
+		tl_skin_cape_forge_1.16.5-1.19.jar                |TLSkinCape                    |tlskincape                    |1.19                |COMMON_SET|Manifest: 19:f5:ce:44:81:0c:e4:22:05:5e:73:c5:a8:cd:de:f3:c8:cf:a9:b3:01:70:40:a0:ee:2d:50:7a:1c:3d:1c:8a
+		refinedstorage-1.9.18.jar                         |Refined Storage               |refinedstorage                |1.9.18              |COMMON_SET|Manifest: NOSIGNATURE
+		MysticalAgriculture-1.16.5-4.2.6.jar              |Mystical Agriculture          |mysticalagriculture           |4.2.6               |COMMON_SET|Manifest: NOSIGNATURE
+		ironchest-1.16.5-11.2.21.jar                      |Iron Chests                   |ironchest                     |1.16.5-11.2.21      |COMMON_SET|Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.42-client.jar                   |Minecraft                     |minecraft                     |1.16.5              |COMMON_SET|Manifest: NOSIGNATURE
+		cofh_core-1.16.5-1.5.2.22.jar                     |CoFH Core                     |cofh_core                     |1.5.2.22            |COMMON_SET|Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		thermal_foundation-1.16.5-1.5.2.30.jar            |Thermal Series                |thermal                       |1.5.2.30            |COMMON_SET|Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		TConstruct-1.16.5-3.3.4.335.jar                   |Tinkers' Construct            |tconstruct                    |3.3.4.335           |COMMON_SET|Manifest: NOSIGNATURE
+		industrial-foregoing-1.16.5-3.2.14.6-14.jar       |Industrial Foregoing          |industrialforegoing           |3.2.14.6            |COMMON_SET|Manifest: NOSIGNATURE
+		thermal_innovation-1.16.5-1.5.0.4.jar             |Thermal Innovation            |thermal_innovation            |1.5.0.4             |COMMON_SET|Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		titanium-1.16.5-3.2.8.4-10.jar                    |Titanium                      |titanium                      |3.2.8.4             |COMMON_SET|Manifest: NOSIGNATURE
+		MekanismAdditions-1.16.5-10.1.2.457.jar           |Mekanism: Additions           |mekanismadditions             |10.1.2              |COMMON_SET|Manifest: NOSIGNATURE
+		Botania-1.16.5-420.3.jar                          |Botania                       |botania                       |1.16.5-420.3        |COMMON_SET|Manifest: NOSIGNATURE
+		RecipesLibrary-1.16.5-2.0.0.jar                   |Recipes Library               |recipes_lib                   |2.0.0               |COMMON_SET|Manifest: NOSIGNATURE
+		jeiintegration_1.16.5-7.1.0.22.jar                |JEI Integration               |jeiintegration                |7.1.0.22            |COMMON_SET|Manifest: NOSIGNATURE
+		flywheel-1.16-0.2.5.jar                           |Flywheel                      |flywheel                      |1.16-0.2.5          |COMMON_SET|Manifest: NOSIGNATURE
+		create-mc1.16.5_v0.3.2g.jar                       |Create                        |create                        |v0.3.2g             |COMMON_SET|Manifest: NOSIGNATURE
+		curios-forge-1.16.5-4.1.0.0.jar                   |Curios API                    |curios                        |1.16.5-4.1.0.0      |COMMON_SET|Manifest: NOSIGNATURE
+		relics-1.16.5-0.3.4.4.jar                         |Relics                        |relics                        |0.3.4.4             |COMMON_SET|Manifest: NOSIGNATURE
+		Patchouli-1.16.4-53.3.jar                         |Patchouli                     |patchouli                     |1.16.4-53.3         |COMMON_SET|Manifest: NOSIGNATURE
+		Mantle-1.16.5-1.6.157.jar                         |Mantle                        |mantle                        |1.6.157             |COMMON_SET|Manifest: NOSIGNATURE
+		thermal_cultivation-1.16.5-1.5.0.4.jar            |Thermal Cultivation           |thermal_cultivation           |1.5.0.4             |COMMON_SET|Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		JustEnoughProfessions-1.16.5-1.2.2.jar            |Just Enough Professions (JEP) |justenoughprofessions         |1.2.2               |COMMON_SET|Manifest: NOSIGNATURE
+		OreExcavation-1.8.157.jar                         |Ore Excavation                |oreexcavation                 |1.8.157             |COMMON_SET|Manifest: e7:68:1c:0d:b9:7e:cf:f8:f3:40:9c:84:c5:39:d7:a4:59:78:b0:6b:c3:fd:b7:4f:69:18:a3:88:e3:76:8c:3f
+		time-in-a-bottle-1.1.0.jar                        |Time In A Bottle              |tiab                          |1.1.0               |COMMON_SET|Manifest: NOSIGNATURE
+		thermal_expansion-1.16.5-1.5.2.16.jar             |Thermal Expansion             |thermal_expansion             |1.5.2.16            |COMMON_SET|Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		AppliedEnergisticsTweaker-1.0.0.15.jar            |Applied Energistics Tweaker   |appliedenergisticstweaker     |1.0.0.15            |COMMON_SET|Manifest: NOSIGNATURE
+		MekanismTools-1.16.5-10.1.2.457.jar               |Mekanism: Tools               |mekanismtools                 |10.1.2              |COMMON_SET|Manifest: NOSIGNATURE
+		appleskin-forge-mc1.16.x-2.4.0.jar                |AppleSkin                     |appleskin                     |2.4.0+mc1.16.4      |COMMON_SET|Manifest: NOSIGNATURE
+		Chisel-MC1.16.5-2.0.1-alpha.4.jar                 |Chisel                        |chisel                        |MC1.16.5-2.0.1-alpha|COMMON_SET|Manifest: NOSIGNATURE
+		observerlib-1.16.5-1.5.3.jar                      |ObserverLib                   |observerlib                   |1.16.5-1.5.3        |COMMON_SET|Manifest: NOSIGNATURE
+		refinedstorageaddons-0.7.4.jar                    |Refined Storage Addons        |refinedstorageaddons          |0.7.4               |COMMON_SET|Manifest: NOSIGNATURE
+		CodeChickenLib-1.16.5-4.0.7.445-universal.jar     |CodeChicken Lib               |codechickenlib                |4.0.7.445           |COMMON_SET|Manifest: 31:e6:db:63:47:4a:6e:e0:0a:2c:11:d1:76:db:4e:82:ff:56:2d:29:93:d2:e5:02:bd:d3:bd:9d:27:47:a5:71
+		BrandonsCore-1.16.5-3.0.15.248-universal.jar      |Brandon's Core                |brandonscore                  |3.0.15.248          |COMMON_SET|Manifest: 53:bb:a0:11:bd:61:e2:1a:e2:cb:fd:f8:4f:e4:cd:a5:cc:12:f4:43:f0:78:68:3b:e1:62:c6:78:3b:27:ff:fe
+		Draconic-Evolution-1.16.5-3.0.29.518-universal.jar|Draconic Evolution            |draconicevolution             |3.0.29.518          |COMMON_SET|Manifest: 53:bb:a0:11:bd:61:e2:1a:e2:cb:fd:f8:4f:e4:cd:a5:cc:12:f4:43:f0:78:68:3b:e1:62:c6:78:3b:27:ff:fe
+		Draconic-Additions-1.16.5-2.2.4.7-universal.jar   |Draconic Additions            |draconicadditions             |2.2.4.7             |COMMON_SET|Manifest: NOSIGNATURE
+	Crash Report UUID: e8eff66c-3f15-4d6d-9fed-314ba029b752
+	Launched Version: ForgeOptiFine 1.16.5
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: Radeon RX 570 Series GL version 4.6.0 Compatibility Profile Context 24.3.1.240216, ATI Technologies Inc.
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: vanilla, mod_resources
+	Current Language: English (US)
+	CPU: 4x Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+	OptiFine Version: OptiFine_1.16.5_HD_U_G8_pre2
+	OptiFine Build: 20210305-002749
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: B-v3.2.4.zip
+	OpenGlVersion: 4.6.0 Compatibility Profile Context 24.3.1.240216
+	OpenGlRenderer: Radeon RX 570 Series
+	OpenGlVendor: ATI Technologies Inc.
+	CpuCount: 4
+[22:46:57] [main/INFO]: [net.minecraft.util.registry.Bootstrap:func_179870_a:123]: #@!@# Game crashed! Crash report saved to: #@!@# C:\Users\paulo\AppData\Roaming\.minecraft\crash-reports\crash-2024-08-14_22.46.57-client.txt
